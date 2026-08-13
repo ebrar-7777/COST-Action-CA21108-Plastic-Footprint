@@ -1,5 +1,4 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite both the software (this file) and the associated article."
 title: "Analysis code for: Carbon Emissions from Cell-Culture Plastics Across Europe (COST Action CA21108, NETSKINMODELS)"
 abstract: "Python pipeline for literature-based polymer emission-factor retrieval, procurement-data processing and statistical analysis of the plastic consumption and carbon footprint of cell-culture consumables in 53 European dermatology research laboratories across 22 countries. The repository contains the analysis code together with the country-level results and the article figures; the laboratory-level survey records are not redistributed."
 type: software
