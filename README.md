@@ -32,29 +32,29 @@ Technology)**, [www.cost.eu](https://www.cost.eu/). The survey was carried out w
 ## Pipeline
 
 ```
-      literature (life-cycle assessment studies)
+      Literature (Life-Cycle Assessment Studies)
                      │
-   [1]  literature retrieval  ──►  polymer emission factors (kg CO₂e per kg)
+   [1]  literature Retrieval  ──►  Polymer Emission Factors (kg CO₂e per kg)
                      │
                      ▼
-   procurement survey  ──►  [2] data processing  ──►  per-laboratory mass & CO₂e
+   Procurement Survey  ──►  [2] Data Processing  ──►  Per-Laboratory Mass & CO₂e
    (53 labs, 6 months)       plastic_footprint.py     country_summary.csv
                                                             │
                                                             ▼
-                                     [3]  statistics — mann_whitney_u_test.py
+                                     [3]  Statistics — mann_whitney_u_test.py
                                           ITC vs non-ITC comparison
 ```
 
 ## What is in this repository
 
 ```
-├── 1_literature_retrieval/       emission factors from the LCA literature
+├── 1_literature_retrieval/       Emission factors from the LCA literature
 │   ├── google_web_scraper/
 │   └── scholar_pdf_extractor/
-├── 2_data_processing/            consumable matching, mass and CO₂e calculation
+├── 2_data_processing/            Consumable matching, mass and CO₂e calculation
 │   ├── plastic_footprint.py
-│   ├── DATA_DICTIONARY.md        required input layout + output columns
-│   └── output_data/              country-level results, article figures
+│   ├── DATA_DICTIONARY.md        Required input layout + output columns
+│   └── output_data/              Country-level results, article figures
 ├── 3_statistical_analysis/
 │   └── mann_whitney_u_test.py    ITC vs non-ITC comparison
 ├── CITATION.cff
@@ -85,10 +85,11 @@ maps each reported consumable to a polymer type and unit mass using a built-in c
 database, parses the free-text quantity fields, and computes plastic mass and carbon
 footprint per laboratory, per country and per polymer.
 
-Because respondents described consumables in free text, the matching logic has to make
-explicit decisions. Every one of them is written to a `calc_notes` field, one entry per
-reported purchase, so each of the 424 records can be traced back to the text the
-respondent actually wrote.
+Because respondents described consumables in free text, the matching logic has to make explicit decisions. 
+Every one of them is recorded in the calc_notes field of the audit output, one entry per reported purchase, 
+so each of the 424 records can be traced back to the text the respondent actually wrote. 
+That audit file is generated when the script is run; 
+it is at laboratory level and is therefore not redistributed here (see About the survey data).
 
 The column layout the script expects, and every column it writes, are documented in
 [`DATA_DICTIONARY.md`](2_data_processing/DATA_DICTIONARY.md).
@@ -135,8 +136,8 @@ reviewing those sections rather than simply swapping the input file.
 ## Running the code
 
 ```bash
-git clone https://github.com/ebrar-7777E/cost-action-ca21108-plastic-footprint.git
-cd cost-action-ca21108-plastic-footprint
+git clone https://github.com/ebrar-7777/COST-Action-CA21108-Plastic-Footprint.git
+cd COST-Action-CA21108-Plastic-Footprint
 pip install -r requirements.txt
 
 cd 2_data_processing          && python3 plastic_footprint.py
@@ -178,12 +179,10 @@ name being used to promote derived work.
 
 ## Citation
 
-If you use this code, please cite the archived software release:
-
-The associated article is under process. Once it is published, please cite the article in
+The associated study is under review. Once it is published, please cite the article in
 preference to this archive.
 
-Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+Metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Acknowledgements
 
