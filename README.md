@@ -10,6 +10,11 @@ and its carbon footprint in cell-culture research**
 [![Data licence](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-DATA)
 [![Python](https://img.shields.io/badge/python-3.12-3776ab)](https://www.python.org/)
 
+
+<img src="2_data_processing/output_data/fig4_europe_map.png" width="760" alt="Carbon footprint of participating laboratories across Europe">
+
+<sub>Geographic distribution of the 53 participating laboratories and their carbon footprints</sub>
+
 </div>
 
 ---
