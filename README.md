@@ -53,23 +53,21 @@ Technology)**, [www.cost.eu](https://www.cost.eu/). The survey was carried out w
 ## What is in this repository
 
 ```
-├── 1_literature_retrieval/       Emission factors from the LCA literature
-│   ├── google_web_scraper/
-│   └── scholar_pdf_extractor/
-├── 2_data_processing/            Consumable matching, mass and CO₂e calculation
+├── 1_literature_retrieval       Emission factors from the LCA literature
+│   ├── google_web_scraper
+│   └── scholar_pdf_extractor
+├── 2_data_processing            Consumable matching, mass and CO₂e calculation
 │   ├── plastic_footprint.py
 │   ├── DATA_DICTIONARY.md        Required input layout + output columns
-│   └── output_data/              Country-level results, article figures
-├── 3_statistical_analysis/
+│   └── output_data              Country-level results, article figures
+├── 3_statistical_analysis
 │   └── mann_whitney_u_test.py    ITC vs non-ITC comparison
-├── CITATION.cff
 ├── LICENSE                       BSD 3-Clause — code
 ├── LICENSE-DATA                  CC BY 4.0 — country-level data and figures
 └── requirements.txt
 ```
 
-### 1 · Automated literature retrieval — [`1_literature_retrieval/`](1_literature_retrieval)
-
+### 1 · Automated literature retrieval 
 Two complementary strategies for collecting polymer-specific emission factors from
 published life-cycle assessments.
 
@@ -83,7 +81,7 @@ scrapers are a search aid, not an automatic source of the published numbers. The
 emission factors, with their references and variability ranges, are Supplementary Data 1
 and 2 of the article and are hard-coded in `plastic_footprint.py`.
 
-### 2 · Data processing — [`2_data_processing/`](2_data_processing)
+### 2 · Data processing
 
 [`plastic_footprint.py`](2_data_processing/plastic_footprint.py) is the core script. It
 maps each reported consumable to a polymer type and unit mass using a built-in consumable
@@ -99,7 +97,7 @@ it is at laboratory level and is therefore not redistributed here (see About the
 The column layout the script expects, and every column it writes, are documented in
 [`DATA_DICTIONARY.md`](2_data_processing/DATA_DICTIONARY.md).
 
-### 3 · Statistical analysis — [`3_statistical_analysis/`](3_statistical_analysis)
+### 3 · Statistical analysis 
 
 [`mann_whitney_u_test.py`](3_statistical_analysis/mann_whitney_u_test.py) — two-sided
 Mann–Whitney *U* test of the differences in plastic consumption and carbon footprint
