@@ -182,12 +182,6 @@ Both allow reuse with attribution, in line with COST's commitment to FAIR resear
 outputs. The BSD 3-Clause non-endorsement clause additionally prevents the COST Action's
 name being used to promote derived work.
 
-## Citation
-
-The associated study is under review. Once it is published, please cite the article in
-preference to this archive.
-
-Metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Acknowledgements
 
