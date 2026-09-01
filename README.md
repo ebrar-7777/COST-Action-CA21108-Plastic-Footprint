@@ -7,7 +7,7 @@ and its carbon footprint in cell-culture research**
 
 [![COST Action](https://img.shields.io/badge/COST%20Action-CA21108%20NETSKINMODELS-1f4e79)](https://www.cost.eu/actions/CA21108/)
 [![Code licence](https://img.shields.io/badge/code-BSD--3--Clause-blue)](LICENSE)
-[![Data licence](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-DATA)
+[![Data licence](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](2_data_processing/output_data/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12-3776ab)](https://www.python.org/)
 
 
@@ -63,7 +63,6 @@ Technology)**, [www.cost.eu](https://www.cost.eu/). The survey was carried out w
 ├── 3_statistical_analysis
 │   └── mann_whitney_u_test.py    ITC vs non-ITC comparison
 ├── LICENSE                       BSD 3-Clause — code
-├── LICENSE-DATA                  CC BY 4.0 — country-level data and figures
 └── requirements.txt
 ```
 
@@ -111,8 +110,7 @@ truth and no duplicated dataset.
 
 The published results in [`2_data_processing/output_data/`](2_data_processing/output_data)
 are **country-level aggregates and the article figures**. The aggregates are the same data
-as Supplementary Data 3 of the article, and the figures are the published versions of
-Figures 1–4.
+as Supplementary Data 3 of the article, and the figures are Figures 1-4 as submitted with the article.
 
 The **laboratory-level records are not redistributed here.** The survey collected each
 respondent's name, institutional affiliation, free-text comments and a co-authorship
@@ -174,7 +172,7 @@ consistent, and they are the authoritative numbers.
 | | |
 |---|---|
 | **Code** (`*.py`) | BSD 3-Clause Licence — see [`LICENSE`](LICENSE) |
-| **Data and figures** (`output_data/`) | Creative Commons Attribution 4.0 International — see [`LICENSE-DATA`](LICENSE-DATA) |
+| **Data and figures** (`output_data/`) | Creative Commons Attribution 4.0 International — see [`output_data/LICENSE`](2_data_processing/output_data/LICENSE) |
 
 Both allow reuse with attribution, in line with COST's commitment to FAIR research
 outputs. The BSD 3-Clause non-endorsement clause additionally prevents the COST Action's
